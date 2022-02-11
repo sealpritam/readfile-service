@@ -1,0 +1,12 @@
+<beanio xmlns="http://www.beanio.org/2012/03">
+	<stream name="FileReadStream" format="delimited" ignoreUnidentifiedRecords="true">
+		<parser>
+			<property name ="delimiter" value="|" />
+		</parser>
+		<record name="SampleFileRecord" class="com.practice.readfile.domain.SampleFileDetail">
+			<field name="roll" position="0" minOccurs="0" />
+			<field name="name" position="1" minOccurs="0" />
+			<field name="about" position="2" default="Sample Data" ignore="true" />
+		</record> 
+	</stream>
+</beanio>
